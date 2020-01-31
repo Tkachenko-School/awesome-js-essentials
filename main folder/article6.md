@@ -95,5 +95,3 @@ getStuffAwesome({ id: 150, force: true, verbose: true })
 **Already knew them all?**
 
 You’re a true hipster hacker, you can read more [tips & tricks for writing better code](https://medium.com/@ketacode/the-non-secret-formula-for-writing-better-code-e41d1ff38682).
-
-Let’s talk more on **[twitter](<http://www.twitter.com/ketacode>)**. You can also check my startup [Torii](<https://toriihq.com/>) where we make “SaaS headache” go away.
