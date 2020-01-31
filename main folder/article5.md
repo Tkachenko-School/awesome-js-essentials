@@ -84,8 +84,4 @@ var firstName = ‘Tal’; var screenName = ‘ketacode’ // Ugly ‘Hi, my nam
 
 ## Already knew them all?
 
-Even the copyrighted XXX Operator invented by me?! You’re a true hipster hacker, let’s talk more on **[twitter](<http://www.twitter.com/ketacode>)**.
-
->[Hacker Noon](<http://bit.ly/Hackernoon>) is how hackers start their afternoons. We’re a part of the [@AMI](<http://bit.ly/atAMIatAMI>)family. We are now [accepting submissions](<http://bit.ly/hackernoonsubmission>) and happy to [discuss advertising & sponsorship](mailto:partners@amipublications.com) opportunities.
-To learn more, [read our about page](<https://goo.gl/4ofytp>), [like/message us on Facebook](<http://bit.ly/HackernoonFB>), or simply, [tweet/DM @HackerNoon.](<https://goo.gl/k7XYbx>)
-If you enjoyed this story, we recommend reading our [latest tech stories](<http://bit.ly/hackernoonlatestt>) and [trending tech stories](<https://hackernoon.com/trending>). Until next time, don’t take the realities of the world for granted!
+Even the copyrighted XXX Operator invented?!
