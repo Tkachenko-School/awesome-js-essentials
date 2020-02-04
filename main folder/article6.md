@@ -4,7 +4,7 @@ Following the original [JavaScript hacks for hipsters](<https://hackernoon.com/j
 
 Here’s a photo of non-JavaScripter, non-hacker, non-ES6er, non-hipster on a PacMan background:
 
-![](images\article6-folder\1r04S4t8X6lqZVo2c2tyGmA.jpeg)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article6-folder/1r04S4t8X6lqZVo2c2tyGmA.jpeg)
 
 ## Hipster Hack #1 — Swap variables
 
@@ -95,3 +95,5 @@ getStuffAwesome({ id: 150, force: true, verbose: true })
 **Already knew them all?**
 
 You’re a true hipster hacker, you can read more [tips & tricks for writing better code](https://medium.com/@ketacode/the-non-secret-formula-for-writing-better-code-e41d1ff38682).
+
+Let’s talk more on **[twitter](<http://www.twitter.com/ketacode>)**. You can also check my startup [Torii](<https://toriihq.com/>) where we make “SaaS headache” go away.

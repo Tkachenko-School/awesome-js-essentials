@@ -1,6 +1,6 @@
 # JavaScript Map Function Explained: A Deep Dive
 
-![](images\article2-folder\bp2c32e0.jfif)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article2-folder/bp2c32e0.jfif)
 
 We are going to walk through the JavaScript map function, and I’ll explain how it works in a simple way. Later in the article, we will do a deep dive into some more advanced concepts regarding the map function and its uses.
 
@@ -34,7 +34,7 @@ There is also an optional second parameter to the map function that we will go o
 
 ## Syntactic Sugar
 
-![](images\article2-folder\bp2c32e0.jfif)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article2-folder/akEBIg10DrPMiavDpnZxfHb098y2-sn23td4.jfif)
 
 In the above example, in order to double each value in the original array, we only used the *val* argument. It is extremely common to only use the val argument in the map function. When this is the case, we can simplify our syntax, and even throw in some es6 arrow functions:
 

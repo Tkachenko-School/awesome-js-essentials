@@ -1,6 +1,6 @@
 # Do pure functions exist in JavaScript?
 
-![](images\article3-folder\1ngrcIKRhCQUL9TbCW9IB2A.jpeg)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article3-folder/1ngrcIKRhCQUL9TbCW9IB2A.jpeg)
 
 Recently I got into a [discussion](<http://disq.us/p/1jvymj2>) about how to decide a function is pure in JavaScript. The whole concept of pureness seems to be blurry in such a dynamic language. The following examples show we might need to redefine the term ‘pure function’, or — at least–be very careful when we decide on it.
 
@@ -19,7 +19,7 @@ Sometimes, a third condition is added: ‘Relies on no external mutable state.�
 
 Here I wrote four example functions. Before proceeding, please review them and decide, on your own, which is pure and which is impure.
 
-![](images\article3-folder\68341.jfif)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article3-folder/68341.jfif)
 
 Done? Great, let's compare.
 
@@ -112,7 +112,7 @@ var o = {
 
 Uff, yes. The function was called twice with the exactly same (by any comparing mean) argument, the second time it returned a different value than the first time. It is not pure.
 
-*Note: The previous version of this article used @@toPrimitive or, more verbose,* Symbol.toPrimitive.* As [Alexandre Morgaut](<https://medium.com/@amorgaut>) pointed out,* valueOf *is sufficient and supported since the first version of JavaScript. If you don't know @@toPrimitive, you still might want to [check it out](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive>).*
+*Note: The previous version of this article used @@toPrimitive or, more verbose,* Symbol.toPrimitive.*As [Alexandre Morgaut](<https://medium.com/@amorgaut>) pointed out,* valueOf *is sufficient and supported since the first version of JavaScript. If you don't know @@toPrimitive, you still might want to [check it out](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive>).*
 
 ## What is a pure function, again
 

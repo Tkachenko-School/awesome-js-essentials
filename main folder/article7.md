@@ -1,6 +1,6 @@
 # Quick tips for reducing the cognitive load of your code
 
-![](images\article7-folder\1LTpzKt3bWrqJTjN_Ni8s7Q.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/1LTpzKt3bWrqJTjN_Ni8s7Q.png)
 
 Here are five tips that will help you have a a simple mental [framework](https://hackernoon.com/tagged/framework) that can be used with any language or library and which will lead to good quality code by default. Keep them in mind and writing good code should be a breeze.
 ## 1. Forget about your personal style
@@ -10,7 +10,7 @@ The problem is that people just want to fix their bugs and move on. Your clever 
 
 **Note:** there’s a longer version of [this post on my blog](https://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/), and I also recommend getting the book “[Code Complete](<https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=chrimaiospo06-20&linkId=6aabd46b91da513d86257af2c05b6585>)“, which has many more tips for writing clean code!
 
-![](images\article7-folder\0BmUAcc8xCAtx7a_R.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0BmUAcc8xCAtx7a_R.png)
 
 Don’t personalize your work in ways that would require explanations
 
@@ -22,7 +22,7 @@ Complex code can often be clarified through modularization, and there are more w
 
 **The approach when breaking a problem down should be to have each section as focused as possible, affecting only local state, without mixing in irrelevant issues, and without side-effects if at all possible.** [Programming](<https://hackernoon.com/tagged/programming>) languages and libraries often come with their issues, and abstracting them away can help your code mind its own business. The [Single Responsibility Principle](<http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074>) is another example of how focused and localized code leads to good design.
 
-![](images\article7-folder\0aqtxRjY6ONXTCvUu.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0aqtxRjY6ONXTCvUu.png)
 
 I like taking advantage of variable names to document and compartmentalize logic
 
@@ -36,7 +36,7 @@ Let’s set aside the possible benefits of those additional build tools for a mo
 
 **Avoid using language extensions and libraries that do not play well with your IDE.** The impact they will have on your productivity will far outweigh the small benefit of easier configuration or saving a few keystrokes with more terse syntax.
 
-![](images\article7-folder\01hwYqzlsaq0ckuv7.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/01hwYqzlsaq0ckuv7.png)
 
 Using ServiceLocator is an example of design that leads to poor integration with most IDEs
 
@@ -50,7 +50,8 @@ I talked about modularization. There can also be excessive modularization, which
 
 Libraries and tooling can also be a barrier for new developers. I recently built a project using EcmaScript 7 (babel), only to later realize that our junior dev was getting stuck trying to figure out what it all meant. Huge toll on the team’s productivity. I underestimated how overwhelming that can be to someone just starting out. Don’t use tools that are still too hard to get a grip on. Wait for a better time.
 
-![](images\article7-folder\0ozIrZIpq8KeFtFTg.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0ozIrZIpq8KeFtFTg.png)
+
 Actual code from a makefile I wrote. Junior devs can’t handle overuse of new tech
 
 ## 5. Use informative and contextual names
@@ -60,7 +61,8 @@ If you’ve made it this far, I have good news: this is probably the most import
 Using prefixes in names is a great way to add meaning to them. It’s a practice that used to be popular, and I think misuse is the reason it hasn’t kept up. Prefix systems like [hungarian notation](<http://www.joelonsoftware.com/articles/Wrong.html>)
 were initially meant to add meaning, but with time they ended up being used in less contextual ways, such as just to add type information.
 
-![](images\article7-folder\0XJXOdTzOFt3npMJy.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0XJXOdTzOFt3npMJy.png)
+
 Fluent interfaces have been abused often in recent times
 
 Finally there is always something to be said about keeping a low cyclomatic complexity. What this means is to keep the number of conditional branches as low as possible. Each additional branch will not only add indentation and hurt readability, but will more importantly increase the number of things you have to keep track of.

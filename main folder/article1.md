@@ -1,6 +1,6 @@
 # You Might Not Need that Recursive Function in JavaScript
 
-![](images\article1-folder\1fIdovfxwYhOh9jFSse2ZKw.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article1-folder/1fIdovfxwYhOh9jFSse2ZKw.png)
 
 **Edit:** I have been getting quite a bit of feedback interpreting this article to mean that recursive functions are bad and iterative methods are always better. This couldn’t be further from what I believe — This article simply aims to discuss iteration as an alternative tool!
 
@@ -12,7 +12,7 @@ In this post, I will explore an example of a problem that seems to lend itself t
 
 In this problem, we are attempting to build a hierarchical object tree structure based on a flat array of objects. We do not know ahead of time how deep the tree will be, but we know that each node can only have one parent and can have any number of children. A visualization of an example tree we can work with is as follows:
 
-![](images\article1-folder\3nhao37bBEfHA9RTQ0WNVWfXPD02-g1632b8.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article1-folder/3nhao37bBEfHA9RTQ0WNVWfXPD02-g1632b8.png)
 
 *(Example Tree Structure)*
 
