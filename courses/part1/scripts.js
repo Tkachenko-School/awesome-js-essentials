@@ -10,4 +10,44 @@ const flat = [
     { id: 14, parentId: 10 }
   ]
 
-  
+  // create root for top-level node(s)
+
+  const root = [];
+
+  flat.forEach(node => {
+
+    // case: no parentId means top level
+    if (!node.parentId){
+        return root.push(node);
+    }
+
+    // adding cache for parent indexes that we find at this point
+    const map = {};
+
+
+    //inserting a node as child of parent in a flat array
+    // const parentIndex = flat.findIndex(element => element.id === node.parentId);
+
+    // if (!flat[parentIndex].children){
+    //     return flat[parentIndex].children = [node];
+    // }
+
+    // we inserting a node as child of parent in a flat array
+    let parentIndex = map[node.parentId];
+
+    if ( typeof parentIndex !== "number" ){
+        parentIndex = flat.findIndex(element => element.id === node.parentId);
+        map[node.parentId] = parentIndex;
+    }
+
+    if(!flat[parentIndex].children){
+        return flat[parentIndex].children = [node];
+    }
+
+
+
+    flat[parentIndex].children.push(node);
+
+  })
+
+  console.log(root);
