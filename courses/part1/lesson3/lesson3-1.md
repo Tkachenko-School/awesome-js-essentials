@@ -3,7 +3,6 @@
 ![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article3-folder/1ngrcIKRhCQUL9TbCW9IB2A.jpeg)
 
 
-
 Today I have an interesting question to discuss: how to decide if function is pure in JavaScript. 
 The whole concept of pureness seems to be blurry in such a dynamic language. 
 The following examples show we might need to redefine the term ‘pure function’, or — at least–be very careful when we decide on it.
@@ -30,8 +29,8 @@ Alvin Alexander in his book, "Becoming Functional" defining it as:
 - Its result can’t depend on reading any hidden value outside of the function scope, such as another field in the same class or global variables.
 - It cannot modify any hidden fields outside of the function scope, such as other mutable fields in the same class or global variables.
 - It cannot depend on any external I/O. It can’t rely on input from files, databases, web services, UIs, etc; it can’t produce output, such as writing to a file, database, or web service, writing to a screen, etc.
-- 
-1) A pure function does not modify its input parameters.
+  
+2) A pure function does not modify its input parameters.
 
 ---
 
@@ -119,5 +118,6 @@ In JavaScript functions are first-class, meaning they are a value of a variable,
 doubleC(1) // -> 2 getTwo = function() { return 3 } doubleC(1) // -> 3
 ```
 
-It is important to emphasise that this does not differ to what Alex did above. Just instead of holding a number, the variable holds a function.
+It is important to emphasise that this does not differ to what was done above. 
+Just instead of holding a number, the variable holds a function.
 
