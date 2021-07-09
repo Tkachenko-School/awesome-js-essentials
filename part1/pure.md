@@ -7,3 +7,5 @@ https://blog.bitsrc.io/understanding-javascript-mutation-and-pure-functions-7231
 
 
 https://www.nicoespeon.com/en/2015/01/pure-functions-javascript/
+
+https://dev.to/sanspanic/pure-vs-impure-functions-50aj
