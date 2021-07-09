@@ -2,7 +2,7 @@
 
 ![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article2-folder/bp2c32e0.jfif)
 
-We are going to walk through the JavaScript map function, and I’ll explain how it works in a simple way. Later in the article, we will do a deep dive into some more advanced concepts regarding the map function and its uses.
+We are going to walk through the JavaScript map function, and I’ll explain how it works in a simple way. Later in the lesson, we will do a deep dive into some more advanced concepts regarding the map function and its uses.
 
 ## Map Function Syntax
 
