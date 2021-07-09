@@ -160,7 +160,3 @@ function doubleA(n) {
 One could get around the trick with changing the *Array.prototype* only by avoiding such functions and falling back to *for (for … of)* loops. That is ugly, impractical, and potentially impossible. Abstracting these or using a library has drawbacks on its own.
 
 Don't forget that to make a function truly pure, one would need to combine all of those anti-tricks together. Imagine how doubleD, now that elegant, would look like, how long it would be, and how it would hurt the readability.
-
-*If you like this post, please don’t forget to give a 👏 below. Every clap notification is a motivational boost for me.*
-
-*If you would like to learn more, I recently started a YouTube channel about JavaScript. I post new video every week, so consider subscribing. Be there from the beginning and help me get better.*
