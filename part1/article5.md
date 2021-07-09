@@ -1,6 +1,5 @@
 # Javascript Hacks for Hipsters
 
->This post was originally posted on my [personal blog](<http://berzniz.com/post/68001735765/javascript-hacks-for-hipsters>) and has lots of insights in the comments.
 
 Javascript is so much fun, except when it’s not.
 
