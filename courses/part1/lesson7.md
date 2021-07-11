@@ -1,6 +1,5 @@
 # Quick tips for reducing the cognitive load of your code
 
-![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/1LTpzKt3bWrqJTjN_Ni8s7Q.png)
 
 Here are five tips that will help you have a a simple mental [framework](https://hackernoon.com/tagged/framework) that can be used with any language or library and which will lead to good quality code by default. 
 Keep them in mind and writing good code should be a breeze.
@@ -13,7 +12,7 @@ The problem is that people just want to fix their bugs and move on. Your clever 
 When people have to digest your piece of code, their “mental stack” fills up and it is hard to make progress.
 
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0BmUAcc8xCAtx7a_R.png)
+![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder/images/article7-folder/0BmUAcc8xCAtx7a_R.png?raw=true)
 
 Don’t personalize your work in ways that would require explanations
 
@@ -30,7 +29,7 @@ Storing the result of long conditionals into a variable or two is a great way to
 
 The [Single Responsibility Principle](<http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074>) is another example of how focused and localized code leads to good design.
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0aqtxRjY6ONXTCvUu.png)
+![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder/images/article7-folder/0aqtxRjY6ONXTCvUu.png?raw=true)
 
 I like taking advantage of variable names to document and compartmentalize logic
 
@@ -50,7 +49,7 @@ Your IDE generally isn’t going to be good at handling this stuff, and locating
 
 The impact they will have on your productivity will far outweigh the small benefit of easier configuration or saving a few keystrokes with more terse syntax.
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/01hwYqzlsaq0ckuv7.png)
+![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder/images/article7-folder/01hwYqzlsaq0ckuv7.png?raw=true)
 
 Using ServiceLocator is an example of design that leads to poor integration with most IDEs
 
@@ -77,7 +76,7 @@ Huge toll on the team’s productivity. I underestimated how overwhelming that c
 Don’t use tools that are still too hard to get a grip on. 
 Wait for a better time.
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0ozIrZIpq8KeFtFTg.png)
+![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder/images/article7-folder/0ozIrZIpq8KeFtFTg.png?raw=true)
 
 Actual code from a makefile I wrote. Junior devs can’t handle overuse of new tech
 
@@ -93,7 +92,7 @@ Using prefixes in names is a great way to add meaning to them. It’s a practice
 Prefix systems like [hungarian notation](<http://www.joelonsoftware.com/articles/Wrong.html>) were initially meant to add meaning, 
 but with time they ended up being used in less contextual ways, such as just to add type information.
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder/images/article7-folder/0XJXOdTzOFt3npMJy.png)
+![xxx](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder/images/article7-folder/0XJXOdTzOFt3npMJy.png?raw=true)
 
 Fluent interfaces have been abused often in recent times
 
