@@ -54,7 +54,8 @@ Objects? What use can they have? A number multiplied by an object is, eh, is… 
 
 (Go check it out in the console.) (As I did.)
 
-That doesn't help, though. If only there was a way to make the runtime convert the object to a number when multiplied.
+That doesn't help, though. 
+If only there was a way to make the runtime convert the object to a number when multiplied.
 
 ## toString for numbers
 
@@ -98,6 +99,7 @@ It is not pure.
 
 I know, I am being scrupulous, evil, and I use some dirty tricks. 
 We use pure functions to gain confidence over the code. 
+
 To be sure the code does what it should. Anytime, under any circumstances.
 
 
@@ -107,7 +109,9 @@ That should be pure.
 
 
 I want to be able to trust built-in functions. What kind of programs can I create if 
-I assume anything in *Array.prototype* or *Object.prototype* can change? Extremely basic ones; nobody would ever want to use them.
+I assume anything in *Array.prototype* or *Object.prototype* can change?
+
+Extremely basic ones; nobody would ever want to use them.
 
 As a result of this small, fun exercise I believe **we need a new definition of what we consider a pure function in JavaScript.** 
 
@@ -150,7 +154,9 @@ const two = 2
 const doubleB = (n) => n * two
 ```
 
-Preventing abuse of *valueOf* or *@@toPrimitive* is also possible, yet cumbersome. For example like this:
+Preventing abuse of *valueOf* or *@@toPrimitive* is also possible, yet cumbersome. 
+
+For example like this:
 
 ```
 function doubleA(n) {
@@ -167,4 +173,5 @@ Abstracting these or using a library has drawbacks on its own.
 
 
 Don't forget that to make a function truly pure, one would need to combine all of those anti-tricks together. 
-Imagine how doubleD, now that elegant, would look like, how long it would be, and how it would hurt the readability.
+
+Imagine how `doubleD`, now that elegant, would look like, how long it would be, and how it would hurt the readability.
