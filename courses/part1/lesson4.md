@@ -1,6 +1,7 @@
 # Pure functions in JavaScript
 
-This week, I decided to take on the task of [learning](<https://hackernoon.com/tagged/learning>) a new [JavaScript](<https://hackernoon.com/tagged/javascript>) library called React. One of the interesting things that I found in learning React is its use of functional programming and more importantly it’s use of pure functions.
+Few years ago I start to learn a new for me library called React.
+One of the interesting things that I found in learning React is its use of functional programming and more importantly it’s use of pure functions.
 
 So what are pure functions and as a software engineer why should I care? Pure functions are important because pure functions are easier to reason through and are more testable. Being testable is important because when you write a function you want to know what your result is going to be every time you give it an input.
 
