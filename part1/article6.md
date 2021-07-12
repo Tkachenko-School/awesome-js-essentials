@@ -1,8 +1,8 @@
-# JavaScript hacks for ES6 gen z
+# JavaScript hacks for ES6 Gen Z
 
 let's just jump into it
 
-## gen z Hack #1 — Swap variables
+## Gen Z Hack #1 — Swap variables
 
 Using Array Destructuring to swap values
 
@@ -13,7 +13,7 @@ console.log(a) // -> hello
 console.log(b) // -> world // Yes, it's magic
 ```
 
-## gen z Hack #2 — Async/Await with Destructuring
+## Gen Z Hack #2 — Async/Await with Destructuring
 
 Once again, Array Destructuring is great. Combined with async/await and promises to make a complex flow — simple.
 
@@ -24,7 +24,7 @@ const [user, account] = await Promise.all([
 ])
 ```
 
-## gen z Hack #3 — Debugging
+## Gen Z Hack #3 — Debugging
 
 For anyone who likes to debug using console.logs, here’s something awesome (and yes, I heard of console.table):
 
@@ -38,7 +38,7 @@ console.log({ a, b, c }) // outputs this nice object:
 // }
 ```
 
-## gen z Hack #4 — One liners
+## Gen Z Hack #4 — One liners
 
 Syntax can be so much more compact for array operations
 
@@ -51,7 +51,7 @@ max([123, 321, 32]) // outputs: 321
 const sum = (arr) => arr.reduce((a, b) => (a + b), 0)
 sum([1, 2, 3, 4]) // output: 10
 ```
-## gen z Hack #5 — Array concatenation
+## Gen Z Hack #5 — Array concatenation
 
 The spread operator can be used instead of concat:
 
@@ -70,7 +70,7 @@ const result = [].concat(one, two, three)
 const result = [...one, ...two, ...three]
 ```
 
-## gen z Hack #6 — Cloning
+## Gen Z Hack #6 — Cloning
 
 Clone arrays and objects with ease(important to mention that this is a shallow clone):
 
@@ -80,7 +80,7 @@ const arr = [ ...oldArr ]
 ```
 
 
-## gen z Hack #7 — Named parameters
+## Gen Z Hack #7 — Named parameters
 
 Making function and function calls more readable with destructuring:
 

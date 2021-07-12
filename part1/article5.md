@@ -1,16 +1,22 @@
-# Javascript Hacks for gen Z
+# Javascript Hacks for Gen Z
 
 Javascript is so much fun, except when it’s not.
 
-There’s always the fear of runtime errors that keeps us thinking all the time while writing code. It makes us better coders — we have no other option than to visualize every line of code as if it’s running as we write it.
+There’s always the fear of runtime errors that keeps us thinking all the time while writing code.
+ It makes us better coders — we have no other option than to visualize every line of code as if it’s running as we write it.
 
-That’s why it’s so important to have tidy code. Small code. Pretty code. Code you just fall in love with. Otherwise, Javascript will scare you away.
+That’s why it’s so important to have tidy code. 
+Small code. Pretty code. 
+Code you just fall in love with. 
+Otherwise, Javascript will scare you away.
 
-I gathered some fun snippets I enjoy using instead of boring code that takes too much space. Some makes the code shorter, cleaner and more readable. Other are just plain hacks for debugging.
+I gathered some fun snippets I enjoy using instead of boring code that takes too much space. 
+Some makes the code shorter, cleaner and more readable. Other are just plain hacks for debugging.
 
-I learned all of this from open source code (until node.js all javascript code was open source, wasn’t it?), but I’ll write them here is if I invented them.
+I learned all of this from open source code (until node.js all javascript code was open source, wasn’t it?),
+ but I’ll write them here is if I invented them.
 
-## Gen z hack #1 — Method calling
+## Gen Z hack #1 — Method calling
 
 I really hate if/else blocks and this is quite a useful trick to call the right function based on a boolean value.
 
@@ -28,9 +34,10 @@ obj[method]();
 
 ```
 
-## Gen z hack #2 — String joins
+## Gen Z hack #2 — String joins
 
-It’s a known fact that strings like other strings. Sooner or later you’d like to concatenate two or more of them. I don’t really like +ing them together, so *join()* comes to the rescue.
+It’s a known fact that strings like other strings. Sooner or later you’d like to concatenate two or more of them.
+ I don’t really like +ing them together, so *join()* comes to the rescue.
 
 ```
 [‘first’, ‘name’].join(‘ ‘); // = ‘first name’; 
@@ -38,9 +45,11 @@ It’s a known fact that strings like other strings. Sooner or later you’d lik
 [‘milk’, ‘coffee’, ‘suger’].join(‘, ‘); // = ‘milk, coffee, suger’
 ```
 
-## gen z Hack #3 — Default Operator ||
+## Gen Z Hack #3 — Default Operator ||
 
-Javascript is all about not knowing what an object holds. Sometime you get it as a function argument, other times you might read it from the network or a configuration file. Either way, you can use the || operator to use the second argument if the first is falsy.
+Javascript is all about not knowing what an object holds. 
+Sometime you get it as a function argument, other times you might read it from the network or a configuration file. 
+Either way, you can use the || operator to use the second argument if the first is falsy.
 
 ```
 // default to ‘No name’ when myName is empty (or null, or undefined
@@ -56,9 +65,11 @@ options = options || {};
 };
 ```
 
-## gen z Hack #4 — Guard Operator &&
+## Gen Z Hack #4 — Guard Operator &&
 
-Similar to the *Default Operator*, this one is super useful. It eliminates almost all *IF* calls and makes for a nicer code.
+Similar to the *Default Operator*, this one is super useful. 
+It eliminates almost all *IF* calls and makes for a nicer code.
+
 ```
 // Boring
 if (isThisAwesome) { 
@@ -76,9 +87,11 @@ aCoolFunction && aCoolFunction(); // won’t run nor crash
 
 ```
 
-## gen z Hack #5 — XXX Operator
+## Gen Z Hack #5 — XXX Operator
 
-This one is totally copyrighted and also SFW. Whenever I write some code, but then have to consult the web, or a different part of the code, I add an xxx line to the code. This makes the code break so I can get back to the specific place and fix it later. Much easier to search for it (xxx usually never appears) and you don’t have to think about a TODO comment.
+This one is totally copyrighted and also SFW. Whenever I write some code, but then have to consult the web, 
+or a different part of the code, I add an xxx line to the code. This makes the code break so I can get back to the specific place and fix it later. 
+Much easier to search for it (xxx usually never appears) and you don’t have to think about a TODO comment.
 
 ```
 var z = 15; 
@@ -90,7 +103,7 @@ I’m the only one using xxx and it’s so easy to find in code instead of TODOs
 doSomeMoreMath(z, 15);
 ```
 
-## gen z Hack #6 — Timing
+## Gen Z Hack #6 — Timing
 
 Ever wonder what’s faster: Looping with an i++ or looping with an i— ? Yeah, me neither. 
 For those who does, you can use the console’s timing methods to test for slow loops or any other event-loop blocking code.
@@ -116,9 +129,10 @@ var a = [1,2,3,4,5,6,7,8,9,10];
   
 ```
 
-## gen z Hack #7 — Debugging
+## Gen Z Hack #7 — Debugging
 
-I learned this one from a Java developer. I have absolutely no idea how he knew about it and I didn’t, but I’ve been using it ever since. Just drop a *debugger* statement and the debugger will stop on that line.
+I learned this one from a Java developer. I have absolutely no idea how he knew about it and 
+I didn’t, but I’ve been using it ever since. Just drop a *debugger* statement and the debugger will stop on that line.
 
 ```
 var x = 1; debugger; // Code execution stops here, happy debugging 
@@ -131,9 +145,11 @@ debugger; // Conditional breakpoint
 } 
 x—;
 ```
-## gen z Hack #8 — Old School Debugging
+## Gen Z Hack #8 — Old School Debugging
 
-I’ve always been a “printf debugger” more than a line-by-line-in-a-debugger kind of developer. If you’re like me, you’ll want to “export” some private vars into the global scope in order to examine them from time to time. Don’t forget to remove these before committing/pushing-to-production.
+I’ve always been a “printf debugger” more than a line-by-line-in-a-debugger kind of developer. 
+If you’re like me, you’ll want to “export” some private vars into the global scope in order to examine them from time to time. 
+Don’t forget to remove these before committing/pushing-to-production.
 
 ```
 var deeplyNestedFunction = function() {
@@ -151,7 +167,7 @@ var deeplyNestedFunction = function() {
     
 ```
 
-## gen z Hack #9 — Ultra Light Templates
+## Gen Z Hack #9 — Ultra Light Templates
 
 Are you still concatenating strings using the + operator? 
 Here’s a better way to combine a sentence with your data.
