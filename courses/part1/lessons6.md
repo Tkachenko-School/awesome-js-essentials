@@ -15,7 +15,8 @@ console.log(b) // -> world // Yes, it's magic
 
 ## Gen Z Hack #2 — Async/Await with Destructuring
 
-Once again, Array Destructuring is great. Combined with async/await and promises to make a complex flow — simple.
+Once again, Array Destructuring is great. 
+Combined with async/await and promises to make a complex flow — simple.
 
 ```
 const [user, account] = await Promise.all([
@@ -26,7 +27,8 @@ const [user, account] = await Promise.all([
 
 ## Gen Z Hack #3 — Debugging
 
-For anyone who likes to debug using console.logs, here’s something awesome (and yes, I heard of console.table):
+For anyone who likes to debug using console.logs, 
+here’s something awesome (and yes, I heard of console.table):
 
 ```
 const a = 5, b = 6, c = 7
