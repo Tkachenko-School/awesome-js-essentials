@@ -2,7 +2,6 @@
 
 ## Know once and for all how to index, add and delete elements in arrays
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article1-folder/1ZphA6Bn4EtFf5UBSKqd-OA.jpeg)
 
 The Array in [JavaScript](<https://hackernoon.com/tagged/javascript>) is a global object which contains a list of items.
 
@@ -16,7 +15,7 @@ Arrays in Javascript are **zero-based,** which means that the index of the first
 
 Here is a scheme of an array with different types of elements:
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article1-folder/1zpOOm4aaMZWeDwbmThrmBA.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article1-folder/1zpOOm4aaMZWeDwbmThrmBA.png)
 
 Here at index 0 we find a string, at index 1 an integer, at index 2 a boolean, and at index 3 another array. This comes in very handy when you need to store collections of data in one place; now let’s see how to create and work with arrays.
 
@@ -91,11 +90,11 @@ var familyArray = ["Marge", "Homer", ["Bart", "Lisa", "Maggie"]];
 
 We could represent this array like this :
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article1-folder/1rGnhZrNi9bJvnlvr_L1-sg.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article1-folder/1rGnhZrNi9bJvnlvr_L1-sg.png)
 
 If I want to access the value “Lisa”, how will I manage to to that ?
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article1-folder/13DMsgphGNF46jtrxiKCDCA.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article1-folder/13DMsgphGNF46jtrxiKCDCA.png)
 
 We can visualize the position of “Lisa” here in orange : at index 1 inside the nested array, itself positioned at index 2 of the main array :
 
