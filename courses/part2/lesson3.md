@@ -1,6 +1,6 @@
 # How To Use The Spread Operator on a Function
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article3-folder/0d2rn33cu.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article3-folder/0d2rn33cu.png?raw=true)
 
 You can’t officially do it, but you can write a function that does virtually the same thing. Let’s see how and maybe why you should.
 But first, have you ever found yourself in this situation?
