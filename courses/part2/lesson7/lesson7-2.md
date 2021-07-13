@@ -1,8 +1,6 @@
-
-
 ## Choosing between an Object and a Function
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-bndc32lc.png?raw=true)
+
 
 Functions can be thought of as a succinct way of defining a Dictionary. 
 
@@ -19,36 +17,19 @@ That would be a lot of lines of code! Whereas with a function it would simply be
    For example if we have
    `const person = {name: "Ada Lovelace", profession: 'Old School Engineer'} ,` we can’t derive the name, and profession values from the keys with any common logic.
 
-* Performance. If the computation in a function is highly complex the time spent running it might overtake just storing the result of that function in an object. Take fibonacci for example. 
-  
-In [this comparison](<https://jsperf.com/learning-javascript-objects-are-functions-code-sample/1>) we can see running a recursive fibonacci function with the input as 8 is much slower than getting it from a predefined object. (Yes, we could have used a loop, but that’s besides the point…)
+* Performance. If the computation in a function is highly complex the time spent running it might overtake just storing the result of that function in an object. Fibonacci sequence can be an example for that(famous sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on)
   
 
 In fact we could get the best of both worlds by building an object within our function that stores the input as the key and output as the value; so that the second time the function is run instead of doing the computation, it can simply get the value from the object.
 
-
-
-
-
-
-
-
-
-*This technique is called memoization and works with pure functions. [Checkout this article for an example.](<https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e>)*
-
-
-
-
-
-
-
-
+*This technique is called memoization and works with pure functions.* We will address that later.
 
 But we still haven’t gotten to the cool part yet!
 
+
 ## Map on an Object
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-svl432v3.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-svl432v3.png)
 
 Have you ever wanted to call map on an object; just as you can on an array (e.g. `[1, 2].map(n => n + 1)`)? 
 

@@ -44,3 +44,20 @@ https://hackernoon.com/javascript-essentials-concepts-code-for-frontend-develope
 
 check this: 
 If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4). 
+
+
+
+check^ 
+
+*This technique is called memoization and works with pure functions. [Checkout this article for an example.](<https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e>)*
+
+
+fibonacchi
+
+https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710
+
+https://stackoverflow.com/questions/7944239/generating-fibonacci-sequence
+
+https://www.programiz.com/javascript/examples/fibonacci-series
+https://www.geeksforgeeks.org/fibonacci-series-program-in-javascript/
+
