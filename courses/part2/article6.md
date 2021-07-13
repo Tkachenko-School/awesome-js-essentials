@@ -58,16 +58,25 @@ A clean and concise package will ensure that your website loads faster, and has 
 ## Tip 3: Call APIs Asynchronously
 
 Using async code for features like API calls, drastically increases the performance of your JavaScript code. 
-With async code, instead of blocking the single thread that JavaScript has, 
-the async events are pushed to a queue that fires up after all the other code executes. Always use asynchronous APIs in your code.
+
+With async code, instead of blocking the single thread that JavaScript has,
+
+the async events are pushed to a queue that fires up after all the other code executes. 
+
+Always use asynchronous APIs in your code.
 ```
 ```
 ## Tip 4: Avoid using Global Variables
 
-A standard advice that you will hear from your peers who have been coding in JavaScript for a while, is to avoid the use of global variables as much as possible. 
+A standard advice that you will hear from your peers who have been coding in JavaScript for a while,
+is to avoid the use of global variables as much as possible. 
+
 The reason behind this is that, it takes longer for the JavaScript engine at runtime to search for variables that exist in the global scope. 
+
 Another reason to avoid global variables is to avoid collision of variable names. 
+
 In javascript, all of the code shares a single global namespace. 
+
 When there are many global variables in your code, it can result in collisions between various scripts on the same page.
 
 In the example below, *name* is a global variable, and has a global scope. It can be used anywhere.
@@ -80,7 +89,9 @@ In the example below, *name* is a global variable, and has a global scope. It ca
   }
 ```
 
-This can be re-written to have a local scope instead. We can re-write the code and define the variable within the function. Now the  scope of the *name* variable is within the function only.
+This can be re-written to have a local scope instead. We can re-write the code and define the variable within the function. 
+
+Now the scope of the *name* variable is within the function only.
 
 ```
 function myFunction(){
@@ -89,29 +100,42 @@ function myFunction(){
 }
 ```
 
-Always try to use variables in local scope and avoid writing global variables, unless absolutely necessary. 
+Always try to use variables in local scope and avoid writing global variables, unless absolutely necessary.
+
 You can use JavaScript *let* and *const* that have local scope over JavaScript *var.*
 ```
 ```
 ## Tip 5: Profile Your Code and Remove Memory Leaks
 
 Memory leaks are performance killers. 
-Memory leaks use up more and more memory, and eventually take up all of the available memory space and crash your app sometimes. 
+
+Memory leaks use up more and more memory, and eventually take up all of the available memory space and crash your app sometimes.
+
 To improve your JavaScript performance, ensure that your code is free of memory leaks. 
+
 This is a common problem that we have all faced as developers. 
+
 You can track down your memory leaks, using Chrome Dev Tools. 
+
 The performance tab can provide you insight into any memory leaks. 
+
 Watch out for any leaks in your code regularly.
 ```
 ```
 ## Tip 6: Utilize the power of Caching
 
 Caching your files in the browser will drastically improve the performance of your app and speed up the loading time of the website. 
+
 The browser will use the locally cached copy for any web pages that are loaded after the initial load, 
-instead of going back and forth and fetching it from the network. This provides a seamless experience to the users.
+
+instead of going back and forth and fetching it from the network. 
+
+This provides a seamless experience to the users.
 
 JavaScript service workers can be used to cache files that can be used while the user is offline. 
+
 This is an essential piece in creating a [Progressive Web App (PWA)](<https://developers.google.com/web/progressive-web-apps/>). 
+
 Users will still be able to access the site while they are offline with the use of the cached files.
 ```
 ```
@@ -119,15 +143,19 @@ Users will still be able to access the site while they are offline with the use 
 
 [Lighthouse](<https://developers.google.com/web/tools/lighthouse/>)  is an [open-source](<https://github.com/GoogleChrome/lighthouse>), 
 automated tool for improving the quality of web pages. 
+
 You can run it against any web page, public or requiring authentication. 
+
 This tools is very helpful to run audits on your website, 
 and also indicates if your website qualifies as a Progressive Web App (PWA), 
 based on its capacity to handle offline rendering.
 
 You can run Lighthouse in Chrome DevTools, from the command line, or as a Node module. 
+
 You give Lighthouse a URL to audit, it runs a series of audits against the page, 
 and then it generates a report on how well the page did. From there, use the failing audits 
 as indicators on how to improve the page. 
+
 Each audit has a reference doc explaining why the audit is important, as well as how to fix it.
 ```
 ```
@@ -151,9 +179,6 @@ Something to keep in mind, is to keep as much as possible outside the loop, and 
 The less your loop does, the faster the JavaScript code is. Make sure to avoid unnecessary nesting of loops as well in this regard.
 
 
-If you are looking to learn JavaScript in depth, I highly recommend Mosh’s JavaScript courses. 
-
-The link to all of the courses are below:
 
 ```
 ```
