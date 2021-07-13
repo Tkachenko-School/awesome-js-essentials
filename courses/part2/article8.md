@@ -4,19 +4,26 @@
 
 > var obj = new CallableObject(); obj(args);
 
-A callable object is a data structure that behaves as both an object and a function. You can access and assign properties `obj.bar` , call methods `obj.foo()`, but also call the object directly `obj()`, as if it were a function.
+A callable object is a data structure that behaves as both an object and a function. 
+You can access and assign properties `obj.bar` , call methods `obj.foo()`, 
+but also call the object directly `obj()`, as if it were a function.
 
 The direct call is like calling a method of `obj`, which has access to the object’s properties through its `this` [context](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#Function_context).
 
-If you have experience with Python you’ll recognize this, there is a builtin Python protocol using the `__call__` class method. Any method assigned to `__call__` can be accessed as `obj.__call__()` or as `obj()`.
+If you have experience with Python you’ll recognize this, there is a builtin Python protocol using the `__call__` class method. 
+Any method assigned to `__call__` can be accessed as `obj.__call__()` or as `obj()`.
 
-*Callable Objects can also be thought of as stateful functions. Functions are  inherently single instance, stateless procedures. Callable Objects are  instantiated, stateful procedures.*
+*Callable Objects can also be thought of as stateful functions.* 
+*Functions are  inherently single instance, stateless procedures. 
+*Callable Objects are  instantiated, stateful procedures.*
 
 In  JavaScript almost everything is an object, including functions, so  surely we can do this, but how? It’s not built in to the language like  Python, but there are several ways to make it work.
 
 ## The Challenge
 
-Taking inspiration from Python, we want to create a Class / constructor that  we can use to create callable objects that redirect their calls to a  method named `_call`. We want this redirect so that we can inherit from our Class and easily override and extend the `_call` method with new functionality, without having to worry about the inner workings of the callable object.
+Taking inspiration from Python, we want to create a Class / constructor that  we can use to create callable objects that redirect their calls to a  method named `_call`. 
+
+We want this redirect so that we can inherit from our Class and easily override and extend the `_call` method with new functionality, without having to worry about the inner workings of the callable object.
 
 To do this, we’re going to need to inherit from the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) constructor, which inherits from [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), and allows us to create both an object and a dynamic function.
 
@@ -26,7 +33,9 @@ In order to have a reference to the `_call` method, the function part of our fun
 
 ## The Solutions
 
-We want to create an extensible `Callable` class that  maintains proper and correct inheritance in JavaScript, and allows us to call the objects it constructs as functions, with a  reference to themselves, redirecting those calls to an overridable  method `_call`.
+We want to create an extensible `Callable` class that  maintains proper and correct inheritance in JavaScript, 
+and allows us to call the objects it constructs as functions, 
+with a  reference to themselves, redirecting those calls to an overridable  method `_call`.
 
 ## The Bind Way
 
@@ -53,9 +62,14 @@ class Callable extends Function {
 
 Because we’re inheriting from [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) we can create dynamic functions from strings, using [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) in our constructor. So the string we pass to `super` will be the body of our function. We want that function to be able to access its own object and call a method `_call`, passing on its arguments. We do this using [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind).
 
-The bind method will allow us to set the `this` context of a function to whatever we want, by wrapping that function in a transparent bound function. So we bind the function to itself with `this.bind(this)`.
+The bind method will allow us to set the `this` context of a function to whatever we want, 
+by wrapping that function in a transparent bound function. 
+So we bind the function to itself with `this.bind(this)`.
 
-Now our callable object has a reference to itself, except the object we return from our constructor, returned by `this.bind`, is a wrapped version of our original object. So all our properties will be attached to that, new, wrapped function object, and our function has a reference to the old  object passed to `bind`.
+Now our callable object has a reference to itself, 
+except the object we return from our constructor, returned by `this.bind`, is a wrapped version of our original object. 
+So all our properties will be attached to that, new, wrapped function object, 
+and our function has a reference to the old  object passed to `bind`.
 
 The easy solution to this is to attach a reference to the new wrapped object on the old object as `_bound`. And the body of our function, in the string passed to `super`, simply calls `_call` using the `this._bound` reference.
 
@@ -89,9 +103,12 @@ class Callable extends Function {
 
 > Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-callee)
 
-Again we use the `super` call to create a dynamic function, but his time we get our reference to the function itself by taking advantage of another implicit variable  inside a function, the [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
+Again we use the `super` call to create a dynamic function, 
+but his time we get our reference to the function itself 
+by taking advantage of another implicit variable  inside a function, the [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
 
-The arguments object has a property [arguments.callee](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee) that is a reference to the called function. We use this reference as the first argument to `apply` which binds the functions `this` context to itself.
+The arguments object has a property [arguments.callee](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee) that is a reference to the called function. 
+We use this reference as the first argument to `apply` which binds the functions `this` context to itself.
 
 So inside the function body, the string passed to super, we only need to call the `_call` method on `arguments.callee`.
 
@@ -128,11 +145,15 @@ class Callable extends Function {
 
 > Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-closures-and-prototypes)
 
-Here instead of creating a dynamic function with `super`, we discard the function object created by the constructor ( the `this` object ), and replace it with a [closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures), by returning it instead of `this` from the `constructor`.
+Here instead of creating a dynamic function with `super`, 
+we discard the function object created by the constructor ( the `this` object ), 
+and replace it with a [closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures), 
+by returning it instead of `this` from the `constructor`.
 
 The closure is also a function object, and can reference itself in its body through the closed over `closure` variable. We use the `closure` reference to redirect calls to its method `_call`. 
 
-But we’ve broken the prototype chain by replacing `this` with `closure`, so we reattach the prototype of the constructor to `closure` using [Object.setPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) and [new.target](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target) (which is a reference to the constructor) to get the prototype.
+But we’ve broken the prototype chain by replacing `this` with `closure`, 
+so we reattach the prototype of the constructor to `closure` using [Object.setPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) and [new.target](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target) (which is a reference to the constructor) to get the prototype.
 
 You can use `this.constructor.prototype` instead of `new.target.prototype`, but then you must first call `super` to create the `this` object, which is wasteful.
 
@@ -166,9 +187,14 @@ class Callable extends Function {
 
 > Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-Proxy)
 
-Using [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply) we can intercept calls to a function, using the `apply` trap, and redirect it to another function. The `apply` trap gives our callable a reference to itself as the `target` argument.
+Using [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply) we can intercept calls to a function, using the `apply` trap, and redirect it to another function. 
 
-So we create a Class that inherits from Function, `Callable`, wrapping the callable objects created in a `Proxy`, trapping any calls made to those objects, and redirecting them to the `_call` method on the object itself, using the `target` reference.
+The `apply` trap gives our callable a reference to itself as the `target` argument.
+
+So we create a Class that inherits from Function, `Callable`, 
+wrapping the callable objects created in a `Proxy`, 
+trapping any calls made to those objects, and redirecting them to the `_call` method on the object itself, 
+using the `target` reference.
 
 **Pros**
 
@@ -183,7 +209,10 @@ So we create a Class that inherits from Function, `Callable`, wrapping the calla
 
 ## What We Learned
 
-JavaScript is a remarkably flexible language, and you can bend it into many  interesting shapes, like Callable Objects. There may well be use cases  for Callable Objects, but in general I wouldn’t recommend using them,  it’s not idiomatic JavaScript, and might be confusing or unclear to  anyone else using your code. This was mostly just an interesting  exercise.
+JavaScript is a remarkably flexible language, and you can bend it into many  interesting shapes, like Callable Objects. 
+There may well be use cases for Callable Objects, but in general I wouldn’t recommend using them,  
+it’s not idiomatic JavaScript, and might be confusing or unclear to  anyone else using your code. 
+This was mostly just an interesting  exercise.
 
 **References:**
 

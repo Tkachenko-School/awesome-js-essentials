@@ -38,3 +38,9 @@ https://hackernoon.com/javascript-logic-and-andand-v3s32u7
 https://hackernoon.com/creating-callable-objects-in-javascript-d21l3te1
 
 https://hackernoon.com/javascript-essentials-concepts-code-for-frontend-developers-5qv322a
+
+
+
+
+check this: 
+If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4). 

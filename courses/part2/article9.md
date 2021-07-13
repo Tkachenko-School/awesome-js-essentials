@@ -2,17 +2,17 @@
 
 ![img](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article9-folder/id45u32ek.png.jfif)
 
-JavaScript was is and will always be  the first language of choice for developing front-end of any web  application. We all know it. 
+JavaScript was is and will always be  the first language of choice for developing front-end of any web application. We all know it. 
 
 No matter what framework you choose (React or Angular `{I prefer react though}`) you would always need to know few JavaScript concepts and methods to make your life a lot easier. 
 
-In this post I will be writing about
+I plan to talk today about: 
 
-\1.  JavaScript Arrays and Array Methods 
+1.  JavaScript Arrays and Array Methods 
 
-\2. Promises, Async Functions & Chaining 
+2. Promises, Async Functions & Chaining 
 
-\3.  Rest and Spread Operators
+3.  Rest and Spread Operators
 
 There are some other concepts like Closures , generators , proxies and  destructuring etc … but I personally believe that if you master the  above 3 concepts, 40 % of your job as a front-end developer is done  (provided you know how JavaScript and V8 Engine works).
 
@@ -52,13 +52,16 @@ arr.filter(even);  // output [false, true, false, true, false]
 arr.reduce(callback_function,starting_value) // output 15
 ```
 
-The code is pretty much self  explanatory. So i will skip the explanation part of the above code. But  if you still feel something is missing or wrong , do ping me on twitter. 
+The code is pretty much self explanatory. 
+
 
 ## Promises, Async Functions and Chaining
 
-We make Promise to people to complete a task. Right !! Same thing happens  in Javascript. Javascript promise to complete/execute a function  successfully but sometimes it does and sometimes it does not ie. It  fails !!  
+We make Promise to people to complete a task. Right !! 
+Same thing happens in Javascript. 
+Javascript promise to complete/execute a function successfully but sometimes it does and sometimes it does not ie. It  fails !!  
 
-So, a promise in JavaScript is  basically an object for a given task that takes 1 callback function  (generally an asynchronous function like `fetch()`or other networking etc …) as an argument with a **resolve** and **reject** parameters. 
+So, a promise in JavaScript is  basically an object for a given task that takes 1 callback function (generally an asynchronous function like `fetch()`or other networking etc …) as an argument with a **resolve** and **reject** parameters. 
 
 Chaining is used to make use of this response object and execute it in the chain of sequences once, it is being fetched from an async function. 
 
@@ -82,14 +85,22 @@ fetch(url).then(callbackmethod_for_success,callback_method_for_error);
 fetch(url).then(callbackmethod_for_success).catch(callback_method_for_error)
 
 // async function similar to above but in a different way .. 
-async (url) => { try { const response = await fetch(url); console.log(await response.text());} catch (err){console.log('fetch failed', err);}};
+async (url) => { 
+    try { 
+        const response = await fetch(url); 
+        console.log(await response.text());
+    } catch (err){
+        console.log('fetch failed', err);
+    }
+};
 ```
 
-If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4). 
+
 
 ## Rest and Spread operators [ 3 dots ( … ) ]
 
-Rest parameter collects all remaining elements into an array. whereas , Spread operator allows iterables ( **arrays** / **objects** / **strings** ) to be expanded into single `argument/element`.
+Rest parameter collects all remaining elements into an array. 
+Whereas, Spread operator allows iterables ( **arrays** / **objects** / **strings** ) to be expanded into single `argument/element`.
 
 ```
 // rest operator 
@@ -102,6 +113,8 @@ const extended_arr = [...arr,6,7,8,9,10];
 console.log(extended_arr); // output [1,2,3,4,5,6,7,8,9,10]
 ```
 
-**Interesting Fact:** Everything in JavaScript is an object - ie. (Data type , functions and  classes) and the way to use one object with another to complete a task  is something which makes the Javascript (as a language) interesting and  powerful. 
+**Interesting Fact:** 
+Everything in JavaScript is an object - ie. (Data type , functions and  classes) 
+and the way to use one object with another to complete a task is something which makes the Javascript (as a language) interesting and powerful. 
 
 That's it for this story. 

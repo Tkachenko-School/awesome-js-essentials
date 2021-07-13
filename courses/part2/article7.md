@@ -1,6 +1,6 @@
 # Seeing Javascript Objects as Functions Changed How I Code
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/brainblowingup.png) 
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/brainblowingup.png?raw=true) 
 
 So you probably know that functions are objects in javascript (if not go up the prototype chain of a function to find out). But recently, I noticed that javascript objects can be treated like functions. Which leads to some pretty cool implications!
 
@@ -26,7 +26,7 @@ square(3); //=> 9
 
 This pairing of inputs and outputs are called a function’s domain and co-domain, respectively. We could draw them out like this:
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-3i232o5.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-3i232o5.png?raw=true)
 
 That may already look like a key value pair to you, which is what a javascript object is. In fact we could just as well define an object that will have the same behavior.
 
@@ -43,7 +43,7 @@ The only visible difference is we replaced the `()` with `[]`.
 Of course that’s not the only difference. The function implementation can produce the squared value for any number input, while the object implementation will produce `undefined` for anything except `1`, `2`, and `3`.
 Still, we can see the square object as function, but with a different codomain from the `square()` function:
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-v7aa32y9.png) 
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-v7aa32y9.png?raw=true) 
 
 According to wikipedia’s mathematical definition, it is perfectly fine for a function to produce the same output given different input, but the reverse is not true. That is, a function cannot take in the same input and produce different outputs. When we speak of pure function in functional programming this is what we mean.
 
@@ -53,7 +53,7 @@ Anyway, if the line between object and function is so blurry, which one should w
 
 ## Choosing between an Object and a Function
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-bndc32lc.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-bndc32lc.png?raw=true)
 
 Functions can be thought of as a succinct way of defining a Dictionary. If it’s possible to establish governing logic to get the right outputs for given inputs, then it’s better to go with a function.
 Imagine maintaining an object with every number as a key and the square of every number as a value. That would be a lot of lines of code! Whereas with a function it would simply be one line:`const square = (x) => x ** 2.`
@@ -63,7 +63,9 @@ Imagine maintaining an object with every number as a key and the square of every
 * Well, first obviously if there is no governing formula to get the value from a key, you have no choice, but to go with an object. For example if we have
    `const person = {name: "Ada Lovelace", profession: 'Old School Engineer'} ,` we can’t derive the name, and profession values from the keys with any common logic.
 
-* Performance. If the computation in a function is highly complex the time spent running it might overtake just storing the result of that function in an object. Take fibonacci for example. In [this comparison](<https://jsperf.com/learning-javascript-objects-are-functions-code-sample/1>) we can see running a recursive fibonacci function with the input as 8 is much slower than getting it from a predefined object. (Yes, we could have used a loop, but that’s besides the point…)
+* Performance. If the computation in a function is highly complex the time spent running it might overtake just storing the result of that function in an object. Take fibonacci for example. 
+In [this comparison](<https://jsperf.com/learning-javascript-objects-are-functions-code-sample/1>) we can see running a recursive fibonacci function with the input as 8 is much slower than getting it from a predefined object. (Yes, we could have used a loop, but that’s besides the point…)
+  
 
 In fact we could get the best of both worlds by building an object within our function that stores the input as the key and output as the value; so that the second time the function is run instead of doing the computation, it can simply get the value from the object.
 
@@ -141,11 +143,12 @@ result['demeanorAge'] //=> 'seventy eight years old';
 
 We would loop twice through all the keys producing two objects: first, `{ age: ‘forty eight’, demeanorAge: ‘seventy eight’ };` and then `{ age: ‘forty eight years old’, demeanorAge: ‘seventy eight years old’ }`.
 
-We do all this work just so we can get one value from the object, `result[‘demeanorAge’]`. Is there a better way to do this? Well if objects are functions, maybe we could call map on a function instead?
+We do all this work just so we can get one value from the object, `result[‘demeanorAge’]`. 
+Is there a better way to do this? Well if objects are functions, maybe we could call map on a function instead?
 
 ## Map on a Function
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-fpsd32fm.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-fpsd32fm.png?raw=true)
 
 To understand how we could map over a function it’s useful to look at the generalized definition of map in Haskell:
 
@@ -160,8 +163,11 @@ This is saying map will take as arguments:
 * `(a -> b)`: `a` function that takes an input `a` and produces `b` 
 * `f a` : `a` functor containing `a`.
 
-and return`f b` : the same kind of functor containing the new values. When you call map on an array, you’ll get back an array. When you call map on an object, you’ll get back an object.
-Just as we did with objects, we need to decide what is the value a function ‘contains’. Well, if we look at a function as `(input -> output)` we could think of the output as the value the function contains. A little weird (or mind blowing), but let’s go with it.
+and return`f b` : the same kind of functor containing the new values. When you call map on an array, you’ll get back an array. 
+When you call map on an object, you’ll get back an object.
+Just as we did with objects, we need to decide what is the value a function ‘contains’. 
+Well, if we look at a function as `(input -> output)` we could think of the output as the value the function contains. 
+A little weird (or mind blowing), but let’s go with it.
 
 Ok, so if we replace `f` in the type signature above with a function that we’ll represent as `(x -> a)`, it would look something like this:
 
@@ -222,21 +228,34 @@ const result = mapFn(addAgeSuffix,intermediateResult);
 result('demeanorAge') //=> 'seventy eight years old';
 ```
 
-Looks fairly similar, the only thing we had to do is wrap our object in a function: `const jayZDetailsFn = (k) => jayZDetails[k]` , but are there any benefits?
+Looks fairly similar, the only thing we had to do is wrap our object in a function: `const jayZDetailsFn = (k) => jayZDetails[k]` , 
+but are there any benefits?
 
-Well, the issue with our `mapObj` approach is even before we used result we had to iterate twice over the list and build two new objects. Even though we finally only needed one value `result['demeanorAge']` we applied `stringifyNumber`  and `addAgeSuffix`  on all of the values. That’s a lot of extra effort.
+Well, the issue with our `mapObj` approach is even before we used result 
+we had to iterate twice over the list and build two new objects. 
+Even though we finally only needed one value `result['demeanorAge']` 
+we applied `stringifyNumber`  and `addAgeSuffix`  on all of the values. 
+That’s a lot of extra effort.
 
-In contrast, all `mapFn` does is returns a function that basically glues together the functions it’s given. When the result is made no list of keys are looped over, and no objects are created. In fact, even when `result('demeanorAge')`  is called there is no looping or object creation!
+In contrast, all `mapFn` does is returns a function that basically glues together the functions it’s given. 
+When the result is made no list of keys are looped over, and no objects are created. 
+In fact, even when `result('demeanorAge')`  is called there is no looping or object creation!
 
-It just passes `'demeanorAge'` as an input into a pipeline of functions which begins with querying the initial object for just the value we are interested in. Then each function performs a subsequent transformation on the value of `jayZDetails['demeanorAge']`.
+It just passes `'demeanorAge'` as an input into a pipeline of functions which begins 
+with querying the initial object for just the value we are interested in. 
+Then each function performs a subsequent transformation on the value of `jayZDetails['demeanorAge']`.
 
-If you know a little bit about functional programming, you might have realized this is function composition. So yes, to map on a function is to compose a function. Which means if you wrap an object in a function you can use it in function composition or any other fun function tricks, you know.
+If you know a little bit about functional programming, 
+you might have realized this is function composition. 
+So yes, to map on a function is to compose a function. 
+Which means if you wrap an object in a function you can use it
+in function composition or any other fun function tricks, you know.
 
 *As of writing , libraries like [ramda](https://ramdajs.com/docs/#compose) offer compose if you want to try it out!*
 
 ## Take Away
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-yn1na32ok.png)
+![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-yn1na32ok.png?raw=true)
 
 *Just in case you are using these images as coding example, they probably won’t work. Mostly because my brain drawing is not native to javascript. Also the compose available in libraries do not usually add compose to the function prototype. The above would look more like `compose(k => {mind: ‘blown’}[k], yourself)`.*
 
