@@ -58,6 +58,19 @@ const spread = (f, g) => g(x) !== undefined ? g(x) : f(x)
 
 If we want to spread more than two functions we can modify spread to take a list of functions.
 
+
+but before we started, let's refresh our mind with a syntax of reduce method
+(it's executing a reducer function on each element of the array, resulting in asingle output value).
+
+reducer funtion can take four arguments: Accumulator, Current Value, Current Index and Source Array.
+
+```
+reduce((accumulator, currentValue) => { ... } )
+reduce((accumulator, currentValue, index) => { ... } )
+reduce((accumulator, currentValue, index, array) => { ... } )
+reduce((accumulator, currentValue, index, array) => { ... }, initialValue)
+```
+
 ```
 const spread = fns => 
   fns.reduce((a, f) =>  x => f(x) !== undefined ? f(x) : a(x))
@@ -91,7 +104,7 @@ const combined = spread([f, g])
 combined('d')
 ```
 
-Since what spread is actually building is a logical flow of ternaries and functions, when we ask for the value of a single key it executes the logic to get the value for only that key without worrying about getting the other values. [Even this small example seems to show a performance gain.](<https://jsperf.com/function-spread/1>) If we had to spread more times, we could save ourselves more intermediary objects and more time.
+Since what spread is actually building is a logical flow of ternaries and functions, when we ask for the value of a single key it executes the logic to get the value for only that key without worrying about getting the other values. and it also a great for performance of your code. if we need to spread more often, we could save time and more intermediary objects. with only current realization.
 
 Finally since spread produces a function, we also get all the goodness of working with functions like function composition! Here is our spread definition again:
 
@@ -105,6 +118,7 @@ const spread = (...fns) =>
 spread(f, g, h, i, j)
 ```
 
-*There are a two slight differences between this definition and the one we saw earlier. 1. This one avoids the re-execution of `f(x)` if the return value is not `undefined`. 2. We are spreading the input array, which allows an end user to call `spread(f, g)` without needing to put the function into the array.*
+*There are a two slight differences between this definition and the one we saw earlier. 1. This one avoids the re-execution of `f(x)` if the return value is not `undefined`.*
+*2. We are spreading the input array, which allows an end user to call `spread(f, g)` without needing to put the function into the array.*
 
 Try it out and let me know what you think! 😄
