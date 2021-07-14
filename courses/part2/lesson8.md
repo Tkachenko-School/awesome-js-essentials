@@ -1,7 +1,5 @@
 # Creating Callable Objects in JavaScript
 
-![img](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article8-folder/zay3t8y.png)
-
 > var obj = new CallableObject(); obj(args);
 
 A callable object is a data structure that behaves as both an object and a function. 
