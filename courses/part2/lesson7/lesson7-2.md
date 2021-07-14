@@ -79,7 +79,7 @@ We wanted to map over with the function `stringifyNumber()` like so:
 
 ```
 mapObj(stringifyNumber, jayZDetails) 
-//=> { age: 'forty eight', demeanorAge: 'seventy eight' }
+//=> { age: 'fifty two', demeanorAge: 'seventy eight' }
 ```
 
 We could define `mapObj` like so:
@@ -105,18 +105,18 @@ So if we did 2 `mapObj` 's:
 const jayZDetails = { age: 52, demeanorAge: 78 };
 
 const intermediateResult = mapObj(stringifyNumber, jayZDetails);
-// => { age: 'forty eight', demeanorAge: 'seventy eight' }
+// => { age: 'fifty two', demeanorAge: 'seventy eight' }
 
 const finalResult = mapObj(addAgeSuffix, intermediateResult));
-// => { age: 'forty eight years old', demeanorAge: 'seventy eight years old' }
+// => { age: 'fifty two years old', demeanorAge: 'seventy eight years old' }
 
 result['demeanorAge'] //=> 'seventy eight years old';
 ```
 
 We would loop twice through all the keys producing two objects: first,
- `{ age: ‘forty eight’, demeanorAge: ‘seventy eight’ };` 
+ `{ age: fifty two’, demeanorAge: ‘seventy eight’ };` 
  and then 
- `{ age: ‘forty eight years old’, demeanorAge: ‘seventy eight years old’ }`.
+ `{ age: ‘fifty two years old’, demeanorAge: ‘seventy eight years old’ }`.
 
 We do all this work just so we can get one value from the object, `result[‘demeanorAge’]`. 
 Is there a better way to do this? 
