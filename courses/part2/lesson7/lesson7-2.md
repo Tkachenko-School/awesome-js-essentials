@@ -17,7 +17,7 @@ That would be a lot of lines of code! Whereas with a function it would simply be
    For example if we have
    `const person = {name: "Ada Lovelace", profession: 'Old School Engineer'} ,` we can’t derive the name, and profession values from the keys with any common logic.
 
-* Performance. If the computation in a function is highly complex the time spent running it might overtake just storing the result of that function in an object. Fibonacci sequence can be an example for that(famous sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on)
+* Performance. If the computation in a function is highly complex, the time spent running it, might overtake just storing the result of that function in an object. Fibonacci sequence can be an example for that(famous sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on)
   
 
 In fact we could get the best of both worlds by building an object within our function that stores the input as the key and output as the value; so that the second time the function is run instead of doing the computation, it can simply get the value from the object.
@@ -70,12 +70,13 @@ For example, let’s say we have an object representing Jay Z’s age:
 
 ```
 const jayZDetails = { 
-age: 52,
-demeanorAge: 78 
+  age: 52,
+  demeanorAge: 78 
 }
 ```
 
-We wanted to map over with the function `stringifyNumber()`like so:
+We wanted to map over with the function `stringifyNumber()` like so:
+
 ```
 mapObj(stringifyNumber, jayZDetails) 
 //=> { age: 'forty eight', demeanorAge: 'seventy eight' }
@@ -118,5 +119,8 @@ We would loop twice through all the keys producing two objects: first,
  `{ age: ‘forty eight years old’, demeanorAge: ‘seventy eight years old’ }`.
 
 We do all this work just so we can get one value from the object, `result[‘demeanorAge’]`. 
-Is there a better way to do this? Well if objects are functions, maybe we could call map on a function instead?
+Is there a better way to do this? 
 
+Well if objects are functions, maybe we could call map on a function instead?
+
+Let's figure out in in the next lesson.

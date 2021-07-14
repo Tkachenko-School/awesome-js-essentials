@@ -124,13 +124,6 @@ in function composition or any other fun function tricks, you know.
 
 ## Take Away
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-yn1na32ok.png?raw=true)
-
-*Just in case you are using these images as coding example, they probably won’t work.* 
-*Mostly because my brain drawing is not native to javascript.* 
-*Also the compose available in libraries do not usually add compose to the function prototype.* 
-*The above would look more like `compose(k => {mind: ‘blown’}[k], yourself)`.*
-
 The next time you see a javascript object remember, it can be seen as two things:
 
 * A function

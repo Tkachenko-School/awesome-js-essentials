@@ -57,21 +57,28 @@ class Callable extends Function {
   }
 }
 ```
+Try it our locally.
 
-> Try it out on [repl.it](https://repl.it/@arccoza/Javascript-Callable-Object-using-bind)
+Because we’re inheriting from [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) we can create dynamic functions from strings, using [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) in our constructor.
 
-Because we’re inheriting from [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) we can create dynamic functions from strings, using [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) in our constructor. So the string we pass to `super` will be the body of our function. We want that function to be able to access its own object and call a method `_call`, passing on its arguments. We do this using [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind).
+ So the string we pass to `super` will be the body of our function. We want that function to be able to access its own object and call a method `_call`, passing on its arguments.
+  We do this using [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind).
 
 The bind method will allow us to set the `this` context of a function to whatever we want, 
 by wrapping that function in a transparent bound function. 
+
 So we bind the function to itself with `this.bind(this)`.
+
 
 Now our callable object has a reference to itself, 
 except the object we return from our constructor, returned by `this.bind`, is a wrapped version of our original object. 
+
 So all our properties will be attached to that, new, wrapped function object, 
 and our function has a reference to the old  object passed to `bind`.
 
-The easy solution to this is to attach a reference to the new wrapped object on the old object as `_bound`. And the body of our function, in the string passed to `super`, simply calls `_call` using the `this._bound` reference.
+The easy solution to this is to attach a reference to the new wrapped object on the old object as `_bound`. 
+
+And the body of our function, in the string passed to `super`, simply calls `_call` using the `this._bound` reference.
 
 **Pros**
 
@@ -101,13 +108,14 @@ class Callable extends Function {
 }
 ```
 
-> Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-callee)
+try this locally as well.
 
 Again we use the `super` call to create a dynamic function, 
 but his time we get our reference to the function itself 
 by taking advantage of another implicit variable  inside a function, the [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object.
 
 The arguments object has a property [arguments.callee](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee) that is a reference to the called function. 
+
 We use this reference as the first argument to `apply` which binds the functions `this` context to itself.
 
 So inside the function body, the string passed to super, we only need to call the `_call` method on `arguments.callee`.
@@ -142,8 +150,8 @@ class Callable extends Function {
   }
 }
 ```
+try this way locally
 
-> Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-closures-and-prototypes)
 
 Here instead of creating a dynamic function with `super`, 
 we discard the function object created by the constructor ( the `this` object ), 
@@ -155,7 +163,8 @@ The closure is also a function object, and can reference itself in its body thro
 But we’ve broken the prototype chain by replacing `this` with `closure`, 
 so we reattach the prototype of the constructor to `closure` using [Object.setPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) and [new.target](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target) (which is a reference to the constructor) to get the prototype.
 
-You can use `this.constructor.prototype` instead of `new.target.prototype`, but then you must first call `super` to create the `this` object, which is wasteful.
+You can use `this.constructor.prototype` instead of `new.target.prototype`, 
+but then you must first call `super` to create the `this` object, which is wasteful.
 
 **Pros**
 
@@ -184,8 +193,8 @@ class Callable extends Function {
   }
 }
 ```
+try the proxy way locally
 
-> Try it out on [repl.it](https://repl.it/@arccoza/JavaScript-Callable-Object-using-Proxy)
 
 Using [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply) we can intercept calls to a function, using the `apply` trap, and redirect it to another function. 
 
@@ -203,7 +212,7 @@ using the `target` reference.
 
 **Cons**
 
-- Requires wrapping objects created by `Callable` in a `Proxy`  .
+- Requires wrapping objects created by `Callable` in a `Proxy`.
 
 - A small performance penalty for using `Proxy` handlers.
 
@@ -216,4 +225,9 @@ This was mostly just an interesting  exercise.
 
 **References:**
 
-https://stackoverflow.com/questions/36871299/how-to-extend-function-with-es6-classes/40878674#40878674
+- https://stackoverflow.com/questions/36871299/how-to-extend-function-with-es6-classes/40878674#40878674
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee
