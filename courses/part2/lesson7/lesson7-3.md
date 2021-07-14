@@ -1,8 +1,6 @@
 
 ## Map on a Function
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main%20folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-fpsd32fm.png?raw=true)
-
 To understand how we could map over a function it’s useful to look at the generalized definition of map in Haskell:
 
 ```
@@ -16,7 +14,7 @@ This is saying map will take as arguments:
 * `(a -> b)`: `a` function that takes an input `a` and produces `b` 
 * `f a` : `a` functor containing `a`.
 
-and return`f b` : the same kind of functor containing the new values. When you call map on an array, you’ll get back an array. 
+and return `f b` : the same kind of functor containing the new values. When you call map on an array, you’ll get back an array. 
 When you call map on an object, you’ll get back an object.
 
 Just as we did with objects, we need to decide what is the value a function ‘contains’. 

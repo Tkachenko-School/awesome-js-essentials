@@ -29,8 +29,6 @@ But we still haven’t gotten to the cool part yet!
 
 ## Map on an Object
 
-![](https://github.com/ChickenKyiv/awesome-js-essentials/blob/master/main-folder2/images/article7-folder/5jBZ0vOcmLboSeV67vHIMo9P6u63-svl432v3.png)
-
 Have you ever wanted to call map on an object; just as you can on an array (e.g. `[1, 2].map(n => n + 1)`)? 
 
 How would that map be defined?
