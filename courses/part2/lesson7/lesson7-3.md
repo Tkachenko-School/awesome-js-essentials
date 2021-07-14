@@ -65,10 +65,10 @@ Here is the `mapObj` implementation again:
 const jayZDetails = { age: 52, demeanorAge: 78 };
 
 const intermediateResult = mapObj(stringifyNumber, jayZDetails);
-// => { age: 'forty eight', demeanorAge: 'seventy eight' }
+// => { age: 'fifty two', demeanorAge: 'seventy eight' }
 
 const finalResult = mapObj(addAgeSuffix, intermediateResult));
-// => { age: 'forty eight years old', demeanorAge: 'seventy eight years old' }
+// => { age: 'fifty two years old', demeanorAge: 'seventy eight years old' }
 
 result['demeanorAge'] //=> 'seventy eight years old';
 ```
