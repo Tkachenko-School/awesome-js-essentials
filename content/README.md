@@ -114,3 +114,4 @@ https://www.codegrepper.com/code-examples/javascript/how+to+repeat+an+array+of+o
 https://www.codegrepper.com/code-examples/javascript/javascript+complex+object+array 
 
 
+# JavaScript Essentials (Concepts + Code) Frontend Development For Beginners

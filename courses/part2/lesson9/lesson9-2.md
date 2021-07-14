@@ -1,6 +1,4 @@
 
-
-
 ## Promises, Async Functions and Chaining
 
 We make Promise to people to complete a task. Right !! 

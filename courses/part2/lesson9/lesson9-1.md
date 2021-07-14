@@ -1,4 +1,4 @@
-# JavaScript Essentials (Concepts + Code) Frontend Development For Beginners
+# JavaScript Essentials For Beginners
 
 JavaScript was is and will always be  the first language of choice for 
 developing front-end of any web application. We all know it. 
@@ -8,11 +8,11 @@ you would always need to know few JavaScript concepts and methods to make your l
 
 I plan to talk today about: 
 
-1.  JavaScript Arrays and Array Methods 
+1. JavaScript Arrays and Array Methods 
 
 2. Promises, Async Functions & Chaining 
 
-3.  Rest and Spread Operators
+3. Rest and Spread Operators
 
 There are some other concepts like Closures, generators, proxies and  destructuring etc … 
 but I personally believe that if you master the above 3 concepts, 
@@ -59,10 +59,8 @@ const starting_value = 0;
 // array methods 
 arr.map(square)     // output's new array as [1,4,9,16,25]
 arr.filter(even);   // output [false, true, false, true, false]
-arr.reduce(callback_function,starting_value) // output 15
+arr.reduce(callback_function, starting_value) // output 15
 ```
 
 The code is pretty much self explanatory. 
-
-
 
