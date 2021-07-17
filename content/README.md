@@ -42,12 +42,12 @@ https://hackernoon.com/javascript-essentials-concepts-code-for-frontend-develope
 
 
 
-check this: 
-If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4). 
+check this:
+If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4).
 
 
 
-check^ 
+check^
 
 *This technique is called memoization and works with pure functions. [Checkout this article for an example.](<https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e>)*
 
@@ -76,7 +76,7 @@ complex objects
 - https://stackoverflow.com/questions/11922383/how-can-i-access-and-process-nested-objects-arrays-or-json
 
 
-- https://github.com/EQuimper/CodeChallenge/blob/master/javascript/FreeCodeCamps/Basic%20JavaScript/Manipulating%20Complex%20Objects.md 
+- https://github.com/EQuimper/CodeChallenge/blob/master/javascript/FreeCodeCamps/Basic%20JavaScript/Manipulating%20Complex%20Objects.md
 
 - https://forum.freecodecamp.org/t/freecodecamp-manipulating-complex-objects/134080/4
 
@@ -89,20 +89,20 @@ complex objects
 - https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values?rq=1
 
 
-- https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value?rq=1 
+- https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value?rq=1
 
 
 
-- https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects?rq=1 
+- https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects?rq=1
 
 
-- https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of-arrays?rq=1 
+- https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of-arrays?rq=1
 
 
 - https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array?rq=1
 
 
-multy-array
+multi-array
 - https://stackoverflow.com/questions/966225/how-can-i-create-a-two-dimensional-array-in-javascript
 - https://www.programiz.com/javascript/multidimensional-array
 - https://www.javascripttutorial.net/javascript-multidimensional-array/
@@ -111,7 +111,7 @@ multy-array
 - https://www.codegrepper.com/code-examples/javascript/how+to+repeat+an+array+of+objects+n+times+in+javascript
 
 
-- https://www.codegrepper.com/code-examples/javascript/javascript+complex+object+array 
+- https://www.codegrepper.com/code-examples/javascript/javascript+complex+object+array
 
 
 # JavaScript Essentials (Concepts + Code) Frontend Development For Beginners
