@@ -25,7 +25,7 @@ but what if i want to see the content of property of `f`
 
 ---
 
-### lets deep dive
+### lets have a deep dive
 
 
 To get the desired output for the example in the question, use [console.dir()](https://nodejs.org/api/console.html#console_console_dir_obj_options):
