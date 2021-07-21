@@ -72,6 +72,9 @@ i.e., just typing a variable's name and hitting Enter will print an inspected ve
 * `o = { one: 1, two: 'deux', foo: function(){} }  // The REPL echoes the object definition with syntax coloring.`
 
 
+---
+
+
 **[util.inspect()](https://nodejs.org/api/util.html#util_util_inspect_object_options) automatically pretty-prints _object_ and _array_ representations**, but produces **_multiline_ output only when needed**.
 
 
