@@ -170,3 +170,65 @@ const variable2 = {
 resolveObjectPath2(variable2, 'a.b[0].c') // must return 1 
 resolveObjectPath2(variable2, 'a["b"][\'0\'].c'); // also must return 1
 
+
+// -------
+// Case Five
+function resolve5(object, path, defaultValue){
+    var index, stringLength;
+
+    for(index = 0, path = path.split('.'), stringLength = path.length; index < stringLength; index++){
+        if(!object || typeof object != 'object') return defaultValue;
+        object = object[path[index]]
+    }
+
+    if(object === undefined) return defaultValue;
+    return object;
+}
+
+// example
+
+var arr = [true, {'sp ace': true}, true];
+
+var obj = {
+    'sp ace': true,
+    arr: arr,
+    nested: { 'dotted.str.ing': true },
+    arr3: arr
+}
+
+// error
+resolve5(obj, "arr.0")
+
+// return a value
+resolve5(obj, "arr[0]");
+
+// number 
+resolve5(obj, "arr.length");
+
+// true
+resolve5(obj, "sp ace");
+
+// true
+resolve5(obj, "nested['dotted.str.ing'");
+
+
+
+// ---
+// Case Six
+
+var lastObject = { 'a': [{ 'b': { 'c': 3 } }] };
+
+_.get(lastObject, 'a[0].b.c') // return 3
+
+_.get(lastObject, ['a', '0', 'b', 'c']); // return 3
+
+_.get(lastObject, 'a.b.c', 'default') // return 'default'
+
+
+const deep = {11: { 12: { 13: 'hello' } } };
+
+const property1 = "11.12.13";
+
+const value1 = _.reduce(property1.split('.'), function(result, value){
+    return result ? result[value] : undefined
+}, deep); // return 'hello'
