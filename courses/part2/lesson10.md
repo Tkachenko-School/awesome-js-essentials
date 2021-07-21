@@ -121,3 +121,25 @@ _Some_ of the supported placeholders are:
 * `%d` – Number (both integer and float).
 * `%j` – JSON.
 * `%%` – single percent sign (‘%’). This does not consume an argument.
+
+
+---
+
+
+### short answer :) 
+
+You need to use `util.inspect()`:
+```
+const util = require('util')
+
+console.log(util.inspect(myObject, {showHidden: false, depth: null}))
+
+// alternative shortcut
+console.log(util.inspect(myObject, false, null, true /* enable colors */))
+```
+
+Outputs
+```
+{ a: 'a',  b: { c: 'c', d: { e: 'e', f: { g: 'g', h: { i: 'i' } } } } }
+```
+for more details go to docs: http://nodejs.org/api/util.html#util_util_inspect_object_options
