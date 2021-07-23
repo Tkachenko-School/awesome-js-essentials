@@ -28,7 +28,7 @@ The console object provides access to the browser’s debugging console. The spe
 
 
 
-## **#Custom CSS styles for a console.log()**
+## **Custom CSS styles for a console.log()**
 
 The console.log output can be styled in DevTools using the CSS format specifier.
 
@@ -41,7 +41,7 @@ The console.log output can be styled in DevTools using the CSS format specifier.
 
 
 
-## **#String substitutions**
+## **String substitutions**
 
 When passing a string to one of the console object’s methods that accept a string (such as log()), you may use these substitution strings:
 
@@ -61,7 +61,7 @@ When passing a string to one of the console object’s methods that accept a str
 
 
 
-## **#console.assert()**
+## **console.assert()**
 
 Log a message and stack trace to console if the first argument is false.
 
@@ -74,7 +74,7 @@ Log a message and stack trace to console if the first argument is false.
 
 
 
-## **#console.clear()**
+## **console.clear()**
 
 Clear the console.
 
@@ -87,7 +87,7 @@ Clear the console.
 
 
 
-## **#console.count()**
+## **console.count()**
 
 Log the number of times this line has been called with the given label.
 
@@ -100,7 +100,7 @@ Log the number of times this line has been called with the given label.
 
 
 
-## **#console.dir()**
+## **console.dir()**
 
 Displays an interactive list of the properties of the specified JavaScript object.
 
@@ -113,7 +113,7 @@ Displays an interactive list of the properties of the specified JavaScript objec
 
 
 
-## **#console.group() and console.groupEnd()**
+## **console.group() and console.groupEnd()**
 
 Creates a new inline group, indenting all following output by another level. To move back out a level, call groupEnd().
 
@@ -126,7 +126,7 @@ Creates a new inline group, indenting all following output by another level. To 
 
 
 
-## **#HTML elements in the console**
+## **HTML elements in the console**
 
 
 
@@ -137,7 +137,7 @@ Creates a new inline group, indenting all following output by another level. To 
 
 
 
-## **#console.memory**
+## **console.memory**
 
 The memory property can be used to check out the heap size status
 
@@ -152,7 +152,7 @@ Note: memory is a property and not a method.
 
 
 
-## **#console.table()**
+## **console.table()**
 
 Displays tabular data as a table.
 
@@ -165,7 +165,7 @@ Displays tabular data as a table.
 
 
 
-## **#console.time() and console.timeEnd()**
+## **console.time() and console.timeEnd()**
 
 console.time() – Starts a timer with a name specified as an input parameter. Up to 10,000 simultaneous timers can run on a given page.console.timeEnd() – Stops the specified timer and logs the elapsed time in seconds since it started.
 
