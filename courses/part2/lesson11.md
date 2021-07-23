@@ -1,11 +1,6 @@
 
 
-
-```
-
-
 # Basics of how to use console.log()
-```
 
 
 Using console.log() for JavaScript debugging is the most common practice among developers. But, there is more...
@@ -13,17 +8,17 @@ Using console.log() for JavaScript debugging is the most common practice among d
 The console object provides access to the browser’s debugging console. The specifics of how it works vary from browser to browser, but there is a de facto set of features that are typically provided.
 
 
-## **#The most common Console methods:**
+## **The most common Console methods:**
 
-console.log() – For general output of logging information.
+`console.log()` – For general output of logging information.
 
-console. info() – Informative logging of information.
+`console. info()` – Informative logging of information.
 
-console.debug() – Outputs a message to the console with the log level debug.
+`console.debug()` – Outputs a message to the console with the log level debug.
 
-console.warn() – Outputs a warning message.
+`console.warn()` – Outputs a warning message.
 
-console.error() – Outputs an error message.
+`console.error()` – Outputs an error message.
 
 
 
