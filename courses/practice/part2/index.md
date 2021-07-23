@@ -15,28 +15,35 @@ obj1.merge(obj2);
 
 //obj1 now has three properties: food, car, and animal
 ```
+
+---
+
 **ECMAScript 2018 Standard Method**
 
 You would use [object spread](https://github.com/tc39/proposal-object-rest-spread):
 ```
 let merged = {...obj1, ...obj2};
 ```
-merged is now the union of obj1 and obj2. Properties in obj2 will overwrite those in obj1.
+`merged` is now the union of `obj1` and `obj2`. Properties in `obj2` will overwrite those in `obj1.
 
+```
 /** There's no limit to the number of objects you can merge.
 
  *  Later properties overwrite earlier properties with the same name. */
-```
+ 
 const allRules = {...obj1, ...obj2, ...obj3};
 ```
-Here is also the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) for this syntax. If you're using babel you'll need the [babel-plugin-transform-object-rest-spread](https://babeljs.io/docs/en/babel-plugin-transform-object-rest-spread.html) plugin for it to work.
+
+if you want more details, you can do to MDN documentation - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+If you're using babel you'll need the [babel-plugin-transform-object-rest-spread] plugin for it to work.
 
 **ECMAScript 2015 (ES6) Standard Method**
 
+```
 /* For the case in question, you would do: */
-```
+
 Object.assign(obj1, obj2);
-```
+
 /** There's no limit to the number of objects you can merge.
 
  *  All objects get merged into the first object. 
@@ -44,15 +51,12 @@ Object.assign(obj1, obj2);
  *  Only the object in the first argument is mutated and returned.
 
  *  Later properties overwrite earlier properties with the same name. */
-```
-const allRules = Object.assign({}, obj1, obj2, obj3, etc);
-```
-The [Harmony ECMAScript 2015 (ES6)](http://www.ecma-international.org/ecma-262/6.0/#sec-object.assign) specifies **[Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)** which will do this.
-```
-Object.assign(obj1, obj2);
-```
-(see [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Browser_compatibility))
 
+const allRules = Object.assign({}, obj1, obj2, obj3, etc);
+
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 
 ---
@@ -63,9 +67,9 @@ Object.assign(obj1, obj2);
 ```
 for (var attrname in obj2) { obj1[attrname] = obj2[attrname]; }
 ```
-Note that this will simply add all attributes of obj2 to obj1 which might not be what you want if you still want to use the unmodified obj1.
+Note that this will simply add all attributes of `obj2` to `obj1` which might not be what you want if you still want to use the unmodified `obj1`.
 
-If you're using a framework that craps all over your prototypes then you have to get fancier with checks like hasOwnProperty, but that code will work for 99% of cases.
+If you're using a framework that craps all over your prototypes then you have to get fancier with checks like `hasOwnProperty`, but that code will work for 99% of cases.
 
 Example function:
 ```
@@ -93,6 +97,9 @@ function merge_options(obj1,obj2){
 
 }
 ```
+
+BUT...
+
 This doesn't work if objects have same name attributes, and you would also want to merge the attributes.
 
 This only does a shallow copy/merge. Has the potential to clobber a lot of elements.
@@ -145,16 +152,15 @@ console.log(combined)
 ```
 ----
 
-I googled for code to merge object properties and ended up here. However since there wasn't any code for recursive merge I wrote it myself. (Maybe jQuery extend is recursive BTW?) Anyhow, hopefully someone else will find it useful as well.
+Code for recursive merge . The code does not use Object.prototype :)
 
-(Now the code does not use Object.prototype :)
-
+```
 /*
 
 * Recursively merge properties of two objects 
 
 */
-```
+
 function MergeRecursive(obj1, obj2) {
 
   for (var p in obj2) {
@@ -205,6 +211,7 @@ o1 = {  a : 1,
             cca : 100,
 
             ccb : 200 } } };
+            
 
 o2 = {  a : 10,
 
@@ -219,8 +226,10 @@ o2 = {  a : 10,
             cca : 101,
 
             ccb : 202 } } };
+            
 
 o3 = MergeRecursive(o1, o2);
+
 ```
 **Produces object o3 like**
 ```
