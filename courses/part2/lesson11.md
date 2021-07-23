@@ -1,53 +1,10 @@
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 2.345 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β30
-* Fri Jul 23 2021 02:06:43 GMT-0700 (PDT)
-* Source doc: Untitled document
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 13.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
 
 ```
 
 
-# How to Use console.log()
+# Basics of how to use console.log()
 ```
 
 
@@ -70,9 +27,8 @@ console.error() – Outputs an error message.
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
+https://cdn.hackernoon.com/images/ckqxl-3-upt-00260-as-6-hqytc-6-nu.jpg
 ![alt_text](images/image1.png "image_tooltip")
 
 
@@ -83,9 +39,9 @@ The console.log output can be styled in DevTools using the CSS format specifier.
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upu-00270-as-612-u-850-il.jpg
 ![alt_text](images/image2.png "image_tooltip")
 
 
@@ -104,9 +60,8 @@ When passing a string to one of the console object’s methods that accept a str
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
+https://cdn.hackernoon.com/images/ckqxl-3-upv-00280-as-6-a-9-wg-0-cmd.jpg
 ![alt_text](images/image3.png "image_tooltip")
 
 
@@ -117,9 +72,9 @@ Log a message and stack trace to console if the first argument is false.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upv-00290-as-61-ncvbabf.jpg
 ![alt_text](images/image4.png "image_tooltip")
 
 
@@ -130,9 +85,9 @@ Clear the console.
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upw-002-a-0-as-62-xuidtxu.jpg
 ![alt_text](images/image5.png "image_tooltip")
 
 
@@ -143,9 +98,9 @@ Log the number of times this line has been called with the given label.
 
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upx-002-b-0-as-61-eo-70-cmq.jpg
 ![alt_text](images/image6.png "image_tooltip")
 
 
@@ -156,9 +111,9 @@ Displays an interactive list of the properties of the specified JavaScript objec
 
 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upy-002-c-0-as-6-eyjaayxq.jpg
 ![alt_text](images/image7.png "image_tooltip")
 
 
@@ -169,9 +124,9 @@ Creates a new inline group, indenting all following output by another level. To 
 
 
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upz-002-d-0-as-6-eulvbsji.jpg
 ![alt_text](images/image8.png "image_tooltip")
 
 
@@ -180,9 +135,9 @@ Creates a new inline group, indenting all following output by another level. To 
 
 
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-upz-002-e-0-as-6-ex-2-yh-2-me.jpg
 ![alt_text](images/image9.png "image_tooltip")
 
 
@@ -195,9 +150,9 @@ Note: memory is a property and not a method.
 
 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-uq-0002-f-0-as-6-fyuxh-0-g-2.jpg
 ![alt_text](images/image10.png "image_tooltip")
 
 
@@ -208,9 +163,9 @@ Displays tabular data as a table.
 
 
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-uq-1002-g-0-as-62-ejd-4-s-0-r.jpg
 ![alt_text](images/image11.png "image_tooltip")
 
 
@@ -221,9 +176,9 @@ console.time() – Starts a timer with a name specified as an input parameter. U
 
 
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-h-0-as-643-a-1-d-0-bc.jpg
 ![alt_text](images/image12.png "image_tooltip")
 
 
@@ -234,11 +189,10 @@ Outputs a stack trace.
 
 
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
+https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-i-0-as-615-apelir.jpg
 ![alt_text](images/image13.png "image_tooltip")
 
 
 
-## **#Happy coding! ❤️**
