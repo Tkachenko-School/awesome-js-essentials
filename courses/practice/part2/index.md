@@ -251,13 +251,7 @@ o3 = {  a : 10,
 ```
 Nice, but I would make a deepcopy of the objects first. This way o1 would be modified too, as objects are passed by reference.
 
----
 
-Note that [underscore.js](http://underscorejs.org/)'s [extend-method](http://underscorejs.org/#extend) does this in a one-liner:
-```
-_.extend({name : 'moe'}, {age : 50});
-```
-=> {name : 'moe', age : 50}
 
 ---
 ```
