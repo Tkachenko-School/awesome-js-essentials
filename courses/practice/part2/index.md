@@ -39,6 +39,8 @@ If you're using babel you'll need the [babel-plugin-transform-object-rest-spread
 
 **ECMAScript 2015 (ES6) Standard Method**
 
+< The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
+
 ```
 /* For the case in question, you would do: */
 
@@ -376,18 +378,15 @@ var merged = realMerge(obj1, obj2);
 ----
 
 
+another way to do it, with theese specs:
 
 1. Supports deep merge
 2. Does not mutate arguments
 3. Takes any number of arguments
 4. Does not extend the object prototype
-
-Does not depend on another library
-
-
-
-1. Includes check for hasOwnProperty
-2. Is short :)
+5. Does not depend on another library
+6. Includes check for hasOwnProperty
+7. It is short :)
 
 /*
 
@@ -596,7 +595,7 @@ d = merge(a, b, c);
 */
 
 
-    5
+*****************************
 
 You should use lodash's [defaultsDeep](https://lodash.com/docs#defaultsDeep)
 ```
