@@ -1,7 +1,7 @@
+https://stackoverflow.com/questions/171251/how-can-i-merge-properties-of-two-javascript-objects-dynamically
 
 
-
-# **[How can I merge properties of two JavaScript objects dynamically?](https://stackoverflow.com/questions/171251/how-can-i-merge-properties-of-two-javascript-objects-dynamically)**
+# **[How can I merge properties of two JavaScript objects dynamically?]()**
 
 I need to be able to merge two (very simple) JavaScript objects at runtime. 
 
