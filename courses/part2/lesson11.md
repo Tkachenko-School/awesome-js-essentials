@@ -23,8 +23,8 @@ The console object provides access to the browser’s debugging console. The spe
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upt-00260-as-6-hqytc-6-nu.jpg
-![alt_text](images/image1.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upt-00260-as-6-hqytc-6-nu.jpg "image_tooltip")
 
 
 
@@ -36,8 +36,8 @@ The console.log output can be styled in DevTools using the CSS format specifier.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upu-00270-as-612-u-850-il.jpg
-![alt_text](images/image2.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upu-00270-as-612-u-850-il.jpg "image_tooltip")
 
 
 
@@ -56,8 +56,8 @@ When passing a string to one of the console object’s methods that accept a str
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upv-00280-as-6-a-9-wg-0-cmd.jpg
-![alt_text](images/image3.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upv-00280-as-6-a-9-wg-0-cmd.jpg "image_tooltip")
 
 
 
@@ -69,8 +69,8 @@ Log a message and stack trace to console if the first argument is false.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upv-00290-as-61-ncvbabf.jpg
-![alt_text](images/image4.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upv-00290-as-61-ncvbabf.jpg "image_tooltip")
 
 
 
@@ -82,8 +82,8 @@ Clear the console.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upw-002-a-0-as-62-xuidtxu.jpg
-![alt_text](images/image5.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upw-002-a-0-as-62-xuidtxu.jpg "image_tooltip")
 
 
 
@@ -95,8 +95,8 @@ Log the number of times this line has been called with the given label.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upx-002-b-0-as-61-eo-70-cmq.jpg
-![alt_text](images/image6.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upx-002-b-0-as-61-eo-70-cmq.jpg "image_tooltip")
 
 
 
@@ -108,8 +108,8 @@ Displays an interactive list of the properties of the specified JavaScript objec
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upy-002-c-0-as-6-eyjaayxq.jpg
-![alt_text](images/image7.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upy-002-c-0-as-6-eyjaayxq.jpg "image_tooltip")
 
 
 
@@ -121,8 +121,8 @@ Creates a new inline group, indenting all following output by another level. To 
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upz-002-d-0-as-6-eulvbsji.jpg
-![alt_text](images/image8.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upz-002-d-0-as-6-eulvbsji.jpg "image_tooltip")
 
 
 
@@ -132,8 +132,8 @@ https://cdn.hackernoon.com/images/ckqxl-3-upz-002-d-0-as-6-eulvbsji.jpg
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-upz-002-e-0-as-6-ex-2-yh-2-me.jpg
-![alt_text](images/image9.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-upz-002-e-0-as-6-ex-2-yh-2-me.jpg "image_tooltip")
 
 
 
@@ -147,8 +147,8 @@ Note: memory is a property and not a method.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-uq-0002-f-0-as-6-fyuxh-0-g-2.jpg
-![alt_text](images/image10.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-uq-0002-f-0-as-6-fyuxh-0-g-2.jpg "image_tooltip")
 
 
 
@@ -160,8 +160,8 @@ Displays tabular data as a table.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-uq-1002-g-0-as-62-ejd-4-s-0-r.jpg
-![alt_text](images/image11.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-uq-1002-g-0-as-62-ejd-4-s-0-r.jpg "image_tooltip")
 
 
 
@@ -173,8 +173,8 @@ console.time() – Starts a timer with a name specified as an input parameter. U
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-h-0-as-643-a-1-d-0-bc.jpg
-![alt_text](images/image12.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-h-0-as-643-a-1-d-0-bc.jpg "image_tooltip")
 
 
 
@@ -186,8 +186,8 @@ Outputs a stack trace.
 
 
 
-https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-i-0-as-615-apelir.jpg
-![alt_text](images/image13.png "image_tooltip")
+
+![alt_text](https://cdn.hackernoon.com/images/ckqxl-3-uq-4002-i-0-as-615-apelir.jpg "image_tooltip")
 
 
 
