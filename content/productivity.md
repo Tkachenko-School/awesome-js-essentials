@@ -149,3 +149,10 @@ Conclusion
 While these habits are relatively simple, making them part of your daily routine can be quite a challenge. Try to pay extra attention to how you are spending your time each day. When you are doing something that you shouldn’t, take note and be sure to work on it again the following day.
 
 While I personally have benefited from many of these habits, I find myself falling back to bad habits all of the time. Writing down your habits and/or discussing them with colleagues is a great way to keep them top of mind.
+
+
+https://betterprogramming.pub/habits-of-productive-developers-eb2ec507e3d4
+
+https://betterprogramming.pub/7-habits-of-productive-developers-bce60d880907
+
+https://medium.com/swift2go/5-daily-habits-to-become-a-productive-developer-b26b7db422c9
