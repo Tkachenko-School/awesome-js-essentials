@@ -6,13 +6,17 @@ TOC
 ### PART1
 
 L1  Recursive functions - EASY
+
 L2  Map     - Very Easy
+
 L3 Pure F - EASY
+
 L4 Pure F - strange? order should be?
 
 [ Should we add something here? ]
 
 L5 JS hacks for Gen Z     - easy
+
 L6 JS hacks for Gen Z ES6 - easy
 
 L7 Cognitive stuff code - easy
