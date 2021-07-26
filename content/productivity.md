@@ -156,3 +156,8 @@ https://betterprogramming.pub/habits-of-productive-developers-eb2ec507e3d4
 https://betterprogramming.pub/7-habits-of-productive-developers-bce60d880907
 
 https://medium.com/swift2go/5-daily-habits-to-become-a-productive-developer-b26b7db422c9
+
+
+https://www.quora.com/What-habits-do-the-most-productive-programmers-have
+
+
