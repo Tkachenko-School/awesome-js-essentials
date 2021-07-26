@@ -55,3 +55,9 @@ https://gist.github.com/robotanz/5335269d0a7f6d0c8a86edb680e75fd6
 interesting https://gist.github.com/AnushHakobyan/298470524812f3c345baa122f978c30b
 
 https://rextester.com/SIY48045
+
+
+---
+
+
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976
