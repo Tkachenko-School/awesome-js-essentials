@@ -1,29 +1,3 @@
-<!-- Output copied to clipboard! -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 0.477 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β30
-* Thu Jul 15 2021 01:06:27 GMT-0700 (PDT)
-* Source doc: Untitled document
-
-WARNING:
-You have 3 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
 
 <p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 0.</p>
 <ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
@@ -53,14 +27,14 @@ concat()    // Append one or more arrays with given array
 
 
 
-# 
+#
         Mutating Methods
 
 
         There are many array methods that **mutate** the array. Mutating an array means that the resulting array will take a different form from before similar to English definition of mutation. So let’s take a look at some of the most common ones:
 
 
-## 
+##
         push()
 
 
@@ -75,7 +49,7 @@ concat()    // Append one or more arrays with given array
         **<code>push</code></strong> method will insert the element passed at the end of the array and return the length of the new array.
 
 
-## 
+##
         pop()
 
 
@@ -90,7 +64,7 @@ concat()    // Append one or more arrays with given array
         **<code>pop</code></strong> method will remove the last element in the array and return that element.
 
 
-## 
+##
         unshift()
 
 
@@ -108,7 +82,7 @@ concat()    // Append one or more arrays with given array
         **<code>Note</code></strong>: You can pass in as many elements as you like to the function.
 
 
-## 
+##
         shift()
 
 
@@ -123,14 +97,14 @@ concat()    // Append one or more arrays with given array
         **<code>shift</code> </strong>method will remove the first element array and return the removed element.
 
 
-# 
+#
         Iterating Methods
 
 
         Iterating methods are very powerful because iterating through an array is one of the most common instructions that we want to execute. So let’s take a look at some of them:
 
 
-## 
+##
         forEach()
 
 
@@ -146,7 +120,7 @@ concat()    // Append one or more arrays with given array
         **<code>forEach</code> </strong>method will call the function provided once for each element in the array preserving the order. This function provided can take in 3 different arguments: <code>element</code>, <code>index</code>, <code>array</code>. Be sure that the order in which you pass these parameters follow the order.
 
 
-## 
+##
         filter()
 
 
@@ -165,7 +139,7 @@ concat()    // Append one or more arrays with given array
         **<code>Note</code></strong>: filter method doesn’t mutate the original array. It will create a new array.
 
 
-## 
+##
         map()
 
 
@@ -184,7 +158,7 @@ concat()    // Append one or more arrays with given array
         `Note`: just like filter method, map will not mutate the original array because it will create a new array.
 
 
-## 
+##
         reduce()
 
 
@@ -205,14 +179,14 @@ concat()    // Append one or more arrays with given array
         `Note`: reduce method returns a single value not an array.
 
 
-# 
+#
         Others
 
 
         Lastly, there’re couple of more methods that are super important to know and very common in JavaScript codebase.
 
 
-## 
+##
         slice()
 
 
@@ -231,7 +205,7 @@ concat()    // Append one or more arrays with given array
         `Note`: End index is `exclusive` which means that the element at that end index isn’t included in the new array.
 
 
-## 
+##
         concat()
 
 

@@ -42,6 +42,7 @@ https://hackernoon.com/javascript-essentials-concepts-code-for-frontend-develope
 
 
 
+
 check this:
 If you are looking to fetch data from an API, feel free to check out my other post about [API](https://hackernoon.com/working-with-apis-concepts-code-ew5n334c4).
 
@@ -49,7 +50,10 @@ If you are looking to fetch data from an API, feel free to check out my other po
 
 check^
 
+
+
 *This technique is called memoization and works with pure functions. [Checkout this article for an example.](<https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e>)*
+
 
 
 fibonacchi
@@ -102,6 +106,8 @@ complex objects
 - https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array?rq=1
 
 
+
+
 multi-array
 - https://stackoverflow.com/questions/966225/how-can-i-create-a-two-dimensional-array-in-javascript
 - https://www.programiz.com/javascript/multidimensional-array
@@ -112,6 +118,7 @@ multi-array
 
 
 - https://www.codegrepper.com/code-examples/javascript/javascript+complex+object+array
+
 
 
 ## JavaScript Essentials (Concepts + Code) Development For Beginners
